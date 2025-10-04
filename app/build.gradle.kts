@@ -33,17 +33,17 @@ android {
         configureEach {
             //应用名
             //app name
-            resValue("string","app_name","XXX Renderer")
+            resValue("string","app_name","Freedreno Mesa 25.3")
             //包名后缀
             //package name Suffix
-            applicationIdSuffix = ".xxx"
+            applicationIdSuffix = "com.freedreno.mesa25.3"
 
             //渲染器在启动器内显示的名称
             //The name displayed by the renderer in the launcher
-            manifestPlaceholders["des"] = ""
+            manifestPlaceholders["des"] = "Just a test"
             //渲染器的具体定义 格式为 名称:渲染器库名:EGL库名 例如 Some Renderer:libSome_renderer.so:libSome_renderer.so
             //The specific definition format of a renderer is ${name}:${renderer library name}:${EGL library name}, for example: Some Renderer:libSome_renderer.so:libSome_renderer.so
-            manifestPlaceholders["renderer"] = ""
+            manifestPlaceholders["renderer"] = "Freedreno (Mesa25.3-devel)"
 
             //特殊Env
             //Special Env
